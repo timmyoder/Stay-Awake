@@ -27,7 +27,6 @@ def circle_points(radius, center):
     y = radius * np.sin(angles) + center[1]
     return x, y
 
-
 while(True):
     time.sleep(random.randrange(pause))
     mouse_cur = pyautogui.position()
@@ -36,3 +35,4 @@ while(True):
         pyautogui.moveTo(x[i], y[i])
         pyautogui.press("shift")
     print("Movement made at {}".format(datetime.now().time()))
+    
