@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 
 pyautogui.FAILSAFE = False
 pyautogui.PAUSE = 0.001
-numMin = None
 
 print('Never going to sleep')
 
@@ -34,5 +33,5 @@ while(True):
     for i in range(0,random.randint(100, 200)):
         pyautogui.moveTo(x[i], y[i])
         pyautogui.press("shift")
-    print("Movement made at {}".format(datetime.now().time()))
+    print(f"Movement made at {datetime.now().time()}")
     
